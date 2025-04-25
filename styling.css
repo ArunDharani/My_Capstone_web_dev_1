@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lavenderblush;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    overflow-y: auto; /* This ensures vertical scrolling is enabled */
+}
+  
+
+.title {
+    color: black;
+    font-family :'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+
+.photo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;
+    margin : 2em
+}
+
+.container {
+    background-color: rgba(255, 192, 203, 0); /* Fully transparent */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    padding: 20px;
+    margin: 20px auto;
+    width: 20%;
+}
+
+
+.hobbies {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hobbies li {
+    margin-bottom: 1.5em; /* Adjust the value as needed */
+}
+
+.first-center {
+    font-size: 3em;
+}
+.footer-center {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-center a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
+  text-align: center;
+  text-decoration: none;
+  border-style: groove;
+  border-radius: 10cap;      /* Rounded corners */
+  transition: background-color 0.3s;
+}
+
+.surf:hover {
+  background-color: lightblue; /* Darker green on hover */
+}
+
+.Learn:hover {
+  background-color: lightpink; /* Darker green on hover */
+}
+
+.photo:hover {
+    transform: scale(2.5);
+    transition: transform 0.1s;
+}
+
+.explore:hover {
+    background-color: purple; /* Darker green on hover */
+}
+
+.icon {
+    width: 10em;           /* You can adjust the size */
+    height: 10em;
+    cursor: pointer;       /* Shows pointer on hover */
+    transition: transform 0.2s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  .Section1 {
+    position: relative; /* Required for absolute positioning of the overlay */
+    background-image: url('./source_images/cherryblossom.jpg'); /* Replace with your image path */
+    background-size: cover;          /* Scale image to cover the container */
+    background-repeat: no-repeat;    /* Prevent repeating */
+    background-position: center;     /* Center the image */
+    padding: 20px;                   /* Optional padding for inner spacing */
+}
+
+.Section1::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);  /* White overlay with 30% opacity */
+    z-index: 0; /* Place the overlay behind the content */
+}
+
+.Section1 > * {
+    position: relative;
+    z-index: 1; /* Ensure the text/content appears above the overlay */
+}
+
+.Section2 {
+    position: relative; /* Required for absolute positioning of the overlay */
+    background-image: url('./source_images/gang.jpg'); /* Replace with your image path */
+    background-size: cover;          /* Scale image to cover the container */
+    background-repeat: no-repeat;    /* Prevent repeating */
+    background-position: center;     /* Center the image */
+    padding: 20px;                   /* Optional padding for inner spacing */
+    margin-bottom: 0;;
+}
+
+.Section2::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);  /* White overlay with 30% opacity */
+    z-index: 0; /* Place the overlay behind the content */
+}
+
+.Section2 > * {
+    position: relative;
+    z-index: 1; /* Ensure the text/content appears above the overlay */
+}
+
+.expo {
+    color: white;
+}
+
+.intern:hover {
+    background-color: mediumturquoise; /* Darker green on hover */
+  }
+
+.levi:hover {
+    background-color: darkgreen;
+}
+
+.experiences {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experiences li {
+    margin-bottom: 1.5em; /* Adjust the value as needed */
+}
+
+.base { /* Assuming 'base' is the class name of your footer */
+    background-color: blanchedalmond;
+  }
+
+h2 {
+    color : white;
+}
